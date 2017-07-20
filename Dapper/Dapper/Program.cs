@@ -6,12 +6,12 @@ using System.Data.SqlClient;
 using System.Linq;
 using static Dapper.SqlMapper;
 using System.Data;
-using ConsoleApp1.Models;
+using zzrdh.Dapper.Models;
 using System.Xml.Linq;
 using System.IO;
 using System.Xml;
 
-namespace ConsoleApp1
+namespace zzrdh.Dapper
 {
     class Program
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleApp1.Models
+namespace zzrdh.Dapper.Models
 {
     public partial class WfSchemeContent
     {
