@@ -18,7 +18,7 @@ namespace zzrdh.Dapper
         static void Main(string[] args)
         {
             XDocument doc = XDocument.Load("ES201721.xml");
-            Console.Write(doc.Root.Element("PRO_LIST").Elements().Count());
+            Console.WriteLine(doc.Root.Element("PRO_LIST").Elements().Count());
 
             //File.WriteAllText(@"X:\ES201721.json", JsonConvert.SerializeXNode(doc.Root.Element("PRO_LIST")));
 
@@ -60,7 +60,7 @@ WITH(
         {
 
 
-            var cs = @"Server=.;Database=Test;User ID=sa;Password=123456;connection timeout=1200";
+            var cs = @"Server=127.0.0.1;Database=Test;User ID=sa;Password=123456;connection timeout=1200";
 
             if (mars)
             {
