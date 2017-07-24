@@ -25,6 +25,9 @@ namespace zzrdh.Dapper
             dynamic pro_list = JObject.Parse(JsonConvert.SerializeXNode(doc.Root.Element("PRO_LIST")));
             var connection = GetOpenConnection();
 
+            var count = connection.ExecuteScalar<int>("select count(1) from product");
+            Console.WriteLine(count);
+
             var sql = @"INSERT INTO PRODUCT
 SELECT *
 FROM OPENJSON(@PRODUCT)
@@ -39,9 +42,10 @@ WITH(
   BRAND_ZH_NAME VARCHAR(500),
   MANUF_NAME VARCHAR(500)
 )";
-
-            //connection.Execute(sql, new { product = pro_list.PRO_LIST.PRO.ToString() });
-
+            if (count <= 0)
+            {
+                connection.Execute(sql, new { product = pro_list.PRO_LIST.PRO.ToString() });
+            }
 
             //SqlMapper.AddTypeHandler(JObjectHandler.Instance);
 
@@ -53,14 +57,14 @@ WITH(
             //string json = JsonConvert.SerializeObject(list, Formatting.None);
 
             //Console.WriteLine(json);
-            //Console.ReadKey();
+            Console.ReadKey();
         }
 
         public static SqlConnection GetOpenConnection(bool mars = false)
         {
 
 
-            var cs = @"Server=127.0.0.1;Database=Test;User ID=sa;Password=123456;connection timeout=1200";
+            var cs = @"Server=127.0.0.1;Database=TestDB;User ID=sa;Password=Yyc@123456;connection timeout=1200";
 
             if (mars)
             {
