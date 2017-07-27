@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace Versioning
 {
@@ -21,9 +22,15 @@ namespace Versioning
 
             services.AddApiVersioning(option =>
             {
-                option.ReportApiVersions = true;
+                option.ReportApiVersions  = true;
+                //option.ApiVersionReader = new HeaderApiVersionReader("api-version");
+                option.ApiVersionReader   = ApiVersionReader.Combine
+                (
+                    new QueryStringApiVersionReader("api-version"),
+                    new HeaderApiVersionReader("api-version")
+                );
                 option.AssumeDefaultVersionWhenUnspecified = true;
-                option.DefaultApiVersion = new ApiVersion(1, 0);
+                option.DefaultApiVersion                   = new ApiVersion(1, 0);
             });
         }
 
