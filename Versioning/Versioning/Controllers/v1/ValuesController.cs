@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Versioning.Controllers
+namespace Versioning.Controllers.v1
 {
+    [ApiVersion("1.0")]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
@@ -13,7 +14,7 @@ namespace Versioning.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "v1", "value1", "value2" };
         }
 
         // GET api/values/5
