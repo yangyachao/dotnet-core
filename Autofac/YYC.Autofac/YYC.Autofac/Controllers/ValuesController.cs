@@ -8,7 +8,7 @@ using YYC.Autofac.Services;
 namespace YYC.Autofac.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ValuesController : Controller     
     {
         private readonly IValuesService _valuesService;
 
