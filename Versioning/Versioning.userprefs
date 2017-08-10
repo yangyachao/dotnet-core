@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{F6C688F2-8276-4499-B35F-FF76FA31E252}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Versioning/Program.cs">
+    <Files>
+      <File FileName="Versioning/Program.cs" Line="7" Column="36" />
+      <File FileName="Versioning/Startup.cs" Line="30" Column="62" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Versioning PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
