@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{F6C688F2-8276-4499-B35F-FF76FA31E252}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Versioning/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Versioning/Properties/launchSettings.json">
     <Files>
       <File FileName="Versioning/Program.cs" Line="7" Column="36" />
       <File FileName="Versioning/Startup.cs" Line="30" Column="62" />
+      <File FileName="Versioning/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
