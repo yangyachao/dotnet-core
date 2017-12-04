@@ -1,6 +1,6 @@
 using System;
 
-namespace Npgsql.Models
+namespace YYC.Npgsql.Models
 {
     public class ErrorViewModel
     {

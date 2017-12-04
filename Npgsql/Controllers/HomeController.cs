@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Npgsql.Models;
+using YYC.Npgsql.Models;
 
-namespace Npgsql.Controllers
+namespace YYC.Npgsql.Controllers
 {
     public class HomeController : Controller
     {
