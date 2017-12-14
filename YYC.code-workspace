@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "Npgsql"
+		},
+		{
+			"path": "Autofac/YYC.Autofac"
+		},
+		{
+			"path": "Dapper/Dapper"
+		},
+		{
+			"path": "Versioning"
+		}
+	],
+	"settings": {}
+}
