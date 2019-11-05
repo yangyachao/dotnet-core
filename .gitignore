@@ -1,15 +1,15 @@
-﻿################################################################################
+################################################################################
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/Dapper/Dapper/bin/Debug/netcoreapp2.0
+/Dapper/Dapper/bin
 /Dapper/.vs/Dapper/v15
-/Dapper/Dapper/obj/Debug/netcoreapp2.0
+/Dapper/Dapper/obj
 /Dapper/Dapper/obj
 /Versioning/.vs/Versioning/v15
-/Versioning/Versioning/bin/Debug/netcoreapp2.0
+/Versioning/Versioning/bin
 /Versioning/Versioning/obj
 /Autofac/YYC.Autofac/.vs/YYC.Autofac/v15
 /Autofac/YYC.Autofac/YYC.Autofac/obj
-/Autofac/YYC.Autofac/YYC.Autofac/bin/Debug/netcoreapp2.0
+/Autofac/YYC.Autofac/YYC.Autofac/bin
 Versioning/Versioning.userprefs
